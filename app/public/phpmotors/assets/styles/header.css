@@ -1,0 +1,44 @@
+.logo img {
+    height: 5em;
+}
+
+.account {
+    margin-left: 1.5em;
+}
+
+.account a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 2em;
+    text-align: right;
+}
+
+.account a:hover {
+    color: var(--color-dark-grey);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        padding: 2em;
+    }
+
+    .logo img {
+        height: 7.5em;
+    }
+
+    .account {
+        margin-right: 1.5em;
+    }
+
+    .account a {
+        font-size: 2.25em;
+    }
+}

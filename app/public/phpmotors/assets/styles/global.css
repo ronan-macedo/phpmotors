@@ -1,0 +1,33 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #3a3a3a;
+    --color-dark-blue: #4c96d7;
+    --color-light-blue: #a6cbeb;
+    --color-dark-grey: #8d8d8d;
+    --color-light-grey: #bababa;
+    font-size: 60%;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--color-light);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        border: 5px solid var(--color-dark-blue);
+        border-radius: .75em;
+        margin: 2em 5em 2em 5em;
+    }
+
+    body {
+        background-image: url(../images/site/small_check.jpg);
+    }
+}

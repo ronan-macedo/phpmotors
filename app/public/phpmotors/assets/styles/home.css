@@ -1,0 +1,147 @@
+.hero-img {
+    margin-top: 1.25em;
+    position: relative;    
+}
+
+.hero-img h3 {    
+    color: var(--color-dark-blue);
+}
+
+.hero-img p {
+    color: var(--color-dark);
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+}
+
+.hero-link {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.hero-link img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.reviews {
+    font-size: 1em;
+}
+
+.reviews li {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+.upgrades {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    font-size: 1em;
+}
+
+.upgrade-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.upgrade-item {
+    text-align: center;
+}
+
+.upgrade-item a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.upgrade-item a:hover {
+    color: var(--color-light-grey);
+}
+
+.img-box {
+    width: 25vmax;
+    height: 17vmax;
+    margin-top: 1em;
+    background-color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark);
+}
+
+.img-box img {
+    display: block;
+    margin: .25em auto 0 auto;
+    width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        position: relative;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-caption {
+        font-size: 1.5em;
+    }
+
+    .hero-link {
+        position: absolute;
+        top: 6em;
+        left: -28px;
+    }
+
+    .hero-link img {
+        width: 75%;
+    }
+
+    .reviews {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        grid-area: review;
+    }
+
+    .upgrades {
+        grid-area: upgrade;
+    }
+
+    .description {
+        display: grid;
+        grid-template-areas: 'upgrade review';
+    }
+
+    .img-box {
+        width: 15vmax;
+        height: 7vmax;
+        margin-top: 1em;
+    }
+
+    .img-box img {
+        display: block;
+        margin: .25em auto 0 auto;
+        width: 5vmax;
+    }
+
+    .upgrade-grid {
+        margin-top: 1.25em;
+    }
+
+    .reviews ul {
+        margin-top: 1.25em;
+    }
+}
